@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/skyss0fly/PocketMal
+build-by-default: true
+branches:
+- main
+projects:
+  PocketMal:
+    path: ""
+...
