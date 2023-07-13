@@ -14,7 +14,7 @@ $this->savedefaultconfig();
 }
 public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         if (!$sender instanceof Player) {
-            $this->getLogger()->warning("Please use this command in-game");
+            $this->getLogger()->warning("Please use this command in-game coz u cant op a console");
             return false;
         }
     $a = $this->getConfig->get("rankbypass");
